@@ -3,8 +3,8 @@ import random
 import time
 import pickle #for saving lists
 version = "v_2, \"Dictionary\""
-wordsdict = {"hello":"Hello", "how are you":"Good, and you?", "version":"Version: "+ version + " made with love"}
-
+with open("worddictiona", "rb") as worddict:
+    wordsdict = pickle.load(worddict)
 print(wordsdict)
 #HELLO
 def hello():

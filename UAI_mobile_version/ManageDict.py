@@ -2,7 +2,7 @@ import time
 import pickle #for saving lists
 program = "on"
 while program == "on":
-    with open("maindictiona", "rb") as questionanswer:
+    with open("worddictiona", "rb") as questionanswer:
         maindicti = pickle.load(questionanswer)
     print(maindicti)
     #Now variable "maindicti" is variable where all our value saves
@@ -31,7 +31,7 @@ while program == "on":
         answerdef = input()
         maindicti[questiondef] = answerdef
 
-        with open("maindictiona", "wb") as questionanswer:
+        with open("worddictiona", "wb") as questionanswer:
             pickle.dump(maindicti, questionanswer)
 
 
@@ -65,7 +65,7 @@ while program == "on":
     print("Save changes?")
     savechanges = input("Yes / no: ")
     if savechanges.lower() == "yes":
-        with open("maindictiona", "wb") as questionanswer:
+        with open("worddictiona", "wb") as questionanswer:
             pickle.dump(maindicti, questionanswer)
     print("Try again?")
     program = input("yes or no: ")
