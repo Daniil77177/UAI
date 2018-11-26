@@ -3,7 +3,7 @@ import random
 import time
 import pickle #for saving lists
 version = "v_2, \"Dictionary\""
-with open("worddictiona", "rb") as worddict:
+with open("maindictiona", "rb") as worddict:
     wordsdict = pickle.load(worddict)
 print(wordsdict)
 #HELLO
@@ -29,7 +29,7 @@ def choose_teach():
     return listappend
 #TALK
 def choose_talk():
-	with open("worddictiona", "rb") as worddict:
+	with open("maindictiona", "rb") as worddict:
         	wordsdict = pickle.load(worddict)
 	print("Let's talk")
 	#time.sleep(2)
@@ -75,7 +75,7 @@ if choose == 1:
 		learnq = input("1 - yes, 0 - no: ")
 
 		if learnq == "0":
-			with open("worddictiona", "wb") as worddict:
+			with open("maindictiona", "wb") as worddict:
 				pickle.dump(wordsdict, worddict)
 			break
 
