@@ -4,8 +4,6 @@ import time
 import pickle #for saving lists
 version = "v_2, \"Dictionary\""
 wordsdict = {"hello":"Hello", "how are you":"Good, and you?", "version":"Version: "+ version + " made with love"}
-with open("worddictiona", "wb") as worddict:
-    pickle.dump(wordsdict, worddict)
 
 print(wordsdict)
 #HELLO
@@ -72,16 +70,20 @@ if choose == 1:
 	while learnq == "1":
 		listappend2 = choose_teach()
 		wordsdict[listappend2[0]] = listappend2[1]
+
 		print("Learn again? (2 more times): ", end = "") 
 		learnq = input("1 - yes, 0 - no: ")
+
 		if learnq == "0":
 			with open("worddictiona", "wb") as worddict:
 				pickle.dump(wordsdict, worddict)
 			break
+
 		elif learnq == "1":
 			listappend2 = choose_teach()
 			wordsdict[listappend2[0]] = listappend2[1]
 			continue
+			
 		elif learnq != "1" or learnq != "0":
 			while str(learnq) != "1" or str(learnq) != "0":
 				print("Try type again: ")
