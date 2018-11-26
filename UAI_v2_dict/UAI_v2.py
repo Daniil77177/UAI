@@ -1,5 +1,4 @@
 #!UAI - User Artificial Intelligence
-import random
 import time
 import pickle #for saving lists
 with open("maindictiona", "rb") as questionanswer:
