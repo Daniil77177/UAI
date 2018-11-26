@@ -49,7 +49,7 @@ def choose_talk():
         userinput = input("You: ")
         for i in maindicti:
         
-            if userinput == i or userinput.lower() == i:
+            if userinput == i or userinput.lower() == i or userinput.lower() == i+"?":
                 print("UAI: " + maindicti[i])
                 complete = 1
                 continue
