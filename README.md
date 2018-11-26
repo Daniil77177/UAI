@@ -14,4 +14,5 @@ User Artificial Intelligence
   <li>Take over the world again</li>
 </ol>
 
-<p>Use switch file, to switch the versions</p>
+<p>Use git, to switch the versions</p>
+<p>Different versions in different branches</p>
