@@ -83,7 +83,7 @@ if choose == 1:
 			listappend2 = choose_teach()
 			wordsdict[listappend2[0]] = listappend2[1]
 			continue
-			
+
 		elif learnq != "1" or learnq != "0":
 			while str(learnq) != "1" or str(learnq) != "0":
 				print("Try type again: ")
